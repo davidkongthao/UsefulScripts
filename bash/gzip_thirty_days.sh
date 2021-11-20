@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is intended to run in a directory and gzips anything that is older than 30 days.
+
 thirty_days_ago=$(date -d 'now - 30 days' +%s)
 
 for item in *; do
